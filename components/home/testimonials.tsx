@@ -42,9 +42,9 @@ export function Testimonials() {
           <p className="text-xs uppercase tracking-[0.3em] text-gold">Reviews</p>
           <h2
             id="testimonials-heading"
-            className="mt-2 font-heading text-3xl font-light tracking-wide"
+            className="mt-2 font-heading text-3xl font-light tracking-wide sm:text-4xl"
           >
-            What Our Clients Say
+            Customer Reviews
           </h2>
         </div>
         <div className="relative">
@@ -55,7 +55,7 @@ export function Testimonials() {
                   key={t.name}
                   className="min-w-0 flex-[0_0_100%] px-4 sm:flex-[0_0_80%] sm:px-8 lg:flex-[0_0_60%]"
                 >
-                  <blockquote className="mx-auto max-w-xl rounded-xl border border-border/60 bg-card p-8 text-center shadow-sm">
+                  <blockquote className="mx-auto max-w-xl rounded-2xl border border-border/60 bg-card p-8 text-center shadow-sm transition-shadow hover:shadow-md">
                     <div className="mb-4 flex justify-center gap-0.5 text-gold">
                       {Array.from({ length: t.rating }).map((_, i) => (
                         <Star key={i} className="size-4 fill-current" />

@@ -46,6 +46,7 @@ export function ProductGrid({ products, loading }: ProductGridProps) {
         product={quickViewProduct}
         open={!!quickViewProduct}
         onOpenChange={(open) => !open && setQuickViewProduct(null)}
+        onQuickView={setQuickViewProduct}
       />
     </>
   );

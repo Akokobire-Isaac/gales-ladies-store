@@ -51,7 +51,9 @@ export function filterAndSortProducts(filters: ProductFilters): Product[] {
   }
 
   if (filters.maxPrice != null) {
-    result = result.filter((p) => p.price <= filters.maxPrice!);
+    result = result.filter(
+      (p) => (p.priceMax ?? p.price) <= filters.maxPrice!
+    );
   }
 
   if (filters.onSale) {
@@ -89,6 +91,13 @@ export function getBestSellers(): Product[] {
 
 export function getNewArrivals(): Product[] {
   return products.filter((p) => p.isNew);
+}
+
+export function getFeaturedProducts(limit = 8): Product[] {
+  return products
+    .filter((p) => p.isTrending || p.isBestSeller)
+    .sort((a, b) => (b.popularity ?? 0) - (a.popularity ?? 0))
+    .slice(0, limit);
 }
 
 export function getSaleProducts(): Product[] {

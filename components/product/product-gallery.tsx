@@ -17,7 +17,7 @@ export function ProductGallery({ images, name }: ProductGalleryProps) {
     <div className="space-y-4">
       <div
         className={cn(
-          "relative aspect-[3/4] overflow-hidden rounded-sm bg-muted",
+          "relative aspect-[3/4] overflow-hidden rounded-xl bg-muted",
           zoomed && "cursor-zoom-out"
         )}
         onClick={() => setZoomed(!zoomed)}
@@ -46,7 +46,7 @@ export function ProductGallery({ images, name }: ProductGalleryProps) {
               type="button"
               onClick={() => setActive(i)}
               className={cn(
-                "relative size-20 shrink-0 overflow-hidden rounded-sm border-2 transition-colors",
+                "relative size-20 shrink-0 overflow-hidden rounded-lg border-2 transition-colors",
                 active === i ? "border-gold" : "border-transparent opacity-70"
               )}
               aria-label={`View image ${i + 1}`}

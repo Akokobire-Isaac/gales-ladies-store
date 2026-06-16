@@ -1,4 +1,5 @@
 import type { Product } from "@/types";
+import { generateDressProducts } from "./generate-dresses";
 
 /**
  * Add products by placing images in public/images/ and appending entries here.
@@ -205,7 +206,7 @@ export const products: Product[] = [
       "Comfortable block heel for all-day wear. Chic strappy design in a versatile nude tone.",
     price: 120,
     image: "/images/heels2.jpeg",
-    category: "Heels",
+    category: "Sandals",
     isNew: true,
     popularity: 86,
     createdAt: "2026-05-12",
@@ -226,11 +227,12 @@ export const products: Product[] = [
     name: "Professional Safety Boot",
     slug: "professional-safety-boot",
     description:
-      "Durable safety boot with steel toe protection. Designed for women in industrial and field roles without compromising style.",
-    price: 200,
+      "Durable and comfortable safety boots suitable for both men and women. Ideal for construction sites, factories, warehouses, and industrial environments.",
+    price: 300,
     image: "/images/safetyboot.jpeg",
     images: ["/images/safetyboot.jpeg", "/images/safetyboot2.jpeg"],
-    category: "Safety Boots",
+    category: "Unisex Safety Boots",
+    badge: "UNISEX",
     isBestSeller: true,
     popularity: 80,
     createdAt: "2026-03-20",
@@ -240,11 +242,11 @@ export const products: Product[] = [
     name: "Premium Work Boot",
     slug: "premium-work-boot",
     description:
-      "Water-resistant work boot with ankle support. Trusted protection for demanding environments.",
-    price: 200,
-    oldPrice: 230,
+      "Durable and comfortable safety boots suitable for both men and women. Ideal for construction sites, factories, warehouses, and industrial environments.",
+    price: 300,
     image: "/images/safetyboot2.jpeg",
-    category: "Safety Boots",
+    category: "Unisex Safety Boots",
+    badge: "UNISEX",
     popularity: 75,
     createdAt: "2026-02-28",
   },
@@ -351,9 +353,22 @@ export const products: Product[] = [
     description: "Elegant strappy sandal for warm evenings and events.",
     price: 130,
     image: "/images/heels3.jpeg",
-    category: "Heels",
+    category: "Sandals",
     popularity: 80,
     createdAt: "2026-04-12",
+  },
+  {
+    id: "sandal-001",
+    name: "Luxury Flat Sandal",
+    slug: "luxury-flat-sandal",
+    description:
+      "Premium flat sandal with cushioned sole. Effortless style for everyday wear and weekend outings.",
+    price: 110,
+    image: "/images/heels7.jpeg",
+    category: "Sandals",
+    isNew: true,
+    popularity: 84,
+    createdAt: "2026-06-01",
   },
   {
     id: "heel-005",
@@ -378,4 +393,5 @@ export const products: Product[] = [
     popularity: 74,
     createdAt: "2026-03-25",
   },
+  ...generateDressProducts(17, 54),
 ];

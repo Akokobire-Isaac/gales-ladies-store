@@ -21,17 +21,26 @@ export function Newsletter() {
   };
 
   return (
-    <section className="py-20 sm:py-28" aria-labelledby="newsletter-heading">
-      <div className="mx-auto max-w-2xl px-4 text-center sm:px-6">
-        <p className="text-xs uppercase tracking-[0.3em] text-gold">Exclusive</p>
+    <section
+      className="relative overflow-hidden py-20 sm:py-28"
+      aria-labelledby="newsletter-heading"
+    >
+      <div className="absolute inset-0 bg-foreground" />
+      <div className="absolute inset-0 bg-[radial-gradient(ellipse_at_top_right,_#C9A22733,_transparent_60%)]" />
+
+      <div className="relative mx-auto max-w-2xl px-4 text-center sm:px-6">
+        <p className="text-xs font-medium uppercase tracking-[0.35em] text-gold">
+          Stay Connected
+        </p>
         <h2
           id="newsletter-heading"
-          className="mt-2 font-heading text-3xl font-light tracking-wide"
+          className="mt-3 font-heading text-3xl font-light tracking-wide text-white sm:text-4xl"
         >
           Join Our Newsletter
         </h2>
-        <p className="mt-4 text-muted-foreground">
-          Be the first to know about new collections, sales, and styling tips.
+        <p className="mt-4 text-sm text-white/70">
+          Be the first to know about new collections, exclusive offers and
+          styling inspiration.
         </p>
         <form
           onSubmit={handleSubmit}
@@ -42,11 +51,14 @@ export function Newsletter() {
             placeholder="your@email.com"
             value={email}
             onChange={(e) => setEmail(e.target.value)}
-            className="flex-1"
+            className="flex-1 rounded-full border-white/20 bg-white/10 text-white placeholder:text-white/50"
             aria-label="Email address"
             required
           />
-          <Button type="submit" className="rounded-none sm:min-w-[140px]">
+          <Button
+            type="submit"
+            className="rounded-full bg-gold px-8 text-foreground hover:bg-gold/90 sm:min-w-[160px]"
+          >
             Subscribe
           </Button>
         </form>

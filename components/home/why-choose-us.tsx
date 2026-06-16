@@ -1,6 +1,6 @@
 "use client";
 
-import { Award, Heart, Smartphone, Truck } from "lucide-react";
+import { Award, Headphones, Shield, Truck } from "lucide-react";
 import { motion } from "framer-motion";
 import { Counter } from "@/components/counter";
 
@@ -8,52 +8,61 @@ const features = [
   {
     icon: Truck,
     title: "Fast Delivery",
-    description: "Nationwide delivery across Ghana with reliable shipping partners.",
-  },
-  {
-    icon: Smartphone,
-    title: "Mobile Money Accepted",
-    description: "MTN MoMo, Telecel Cash, and AirtelTigo Money for easy payments.",
+    description:
+      "Nationwide delivery across Ghana with reliable shipping partners and careful packaging.",
   },
   {
     icon: Award,
-    title: "Premium Quality",
-    description: "Carefully curated fabrics and finishes for lasting elegance.",
+    title: "Quality Assurance",
+    description:
+      "Every piece is carefully inspected for premium fabrics, fit, and lasting elegance.",
   },
   {
-    icon: Heart,
-    title: "Trusted Ghanaian Brand",
-    description: "Loved by professional women across Accra and beyond.",
+    icon: Shield,
+    title: "Secure Ordering",
+    description:
+      "Order confidently via WhatsApp with transparent pricing and verified support.",
+  },
+  {
+    icon: Headphones,
+    title: "Customer Support",
+    description:
+      "Our friendly team is ready to help with sizing, orders, and styling advice.",
   },
 ];
 
 export function WhyChooseUs() {
   return (
-    <section className="py-20 sm:py-28" aria-labelledby="why-heading">
+    <section
+      className="bg-accent/40 py-20 sm:py-28"
+      aria-labelledby="why-heading"
+    >
       <div className="mx-auto max-w-7xl px-4 sm:px-6 lg:px-8">
         <div className="mb-16 text-center">
-          <p className="text-xs uppercase tracking-[0.3em] text-gold">Why Us</p>
+          <p className="text-xs font-medium uppercase tracking-[0.35em] text-gold">
+            The Gale&apos;s Difference
+          </p>
           <h2
             id="why-heading"
-            className="mt-2 font-heading text-3xl font-light tracking-wide"
+            className="mt-3 font-heading text-3xl font-light tracking-wide sm:text-4xl"
           >
-            Why Choose Us
+            Why Shop With Us
           </h2>
-          <div className="mt-6 flex justify-center gap-12 text-center">
+          <div className="mt-8 flex justify-center gap-12 text-center sm:gap-16">
             <div>
-              <p className="font-heading text-3xl text-gold">
+              <p className="font-heading text-3xl text-gold sm:text-4xl">
                 <Counter end={500} suffix="+" />
               </p>
-              <p className="text-xs uppercase tracking-widest text-muted-foreground">
+              <p className="mt-1 text-xs uppercase tracking-widest text-muted-foreground">
                 Happy Clients
               </p>
             </div>
             <div>
-              <p className="font-heading text-3xl text-gold">
-                <Counter end={15} suffix="+" />
+              <p className="font-heading text-3xl text-gold sm:text-4xl">
+                <Counter end={50} suffix="+" />
               </p>
-              <p className="text-xs uppercase tracking-widest text-muted-foreground">
-                Collections
+              <p className="mt-1 text-xs uppercase tracking-widest text-muted-foreground">
+                Premium Styles
               </p>
             </div>
           </div>
@@ -66,13 +75,13 @@ export function WhyChooseUs() {
               whileInView={{ opacity: 1, y: 0 }}
               viewport={{ once: true }}
               transition={{ delay: i * 0.08 }}
-              className="rounded-xl border border-border/60 bg-card/50 p-6 backdrop-blur-sm transition-shadow hover:shadow-lg"
+              className="rounded-2xl border border-border/60 bg-card p-6 shadow-sm transition-all duration-300 hover:-translate-y-1 hover:border-gold/30 hover:shadow-lg"
             >
-              <div className="mb-4 flex size-12 items-center justify-center rounded-full bg-gold/10 text-gold">
+              <div className="mb-4 flex size-12 items-center justify-center rounded-full bg-accent text-gold">
                 <feature.icon className="size-6" aria-hidden />
               </div>
               <h3 className="font-heading text-lg font-medium">{feature.title}</h3>
-              <p className="mt-2 text-sm text-muted-foreground">
+              <p className="mt-2 text-sm leading-relaxed text-muted-foreground">
                 {feature.description}
               </p>
             </motion.div>

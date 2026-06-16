@@ -1,10 +1,11 @@
 export type ProductCategory =
   | "Dresses"
+  | "Sandals"
+  | "Unisex Safety Boots"
   | "Office Wear"
   | "Tops"
   | "Handbags"
   | "Heels"
-  | "Safety Boots"
   | "Accessories";
 
 export type SortOption =
@@ -19,11 +20,13 @@ export interface Product {
   slug: string;
   description: string;
   price: number;
+  priceMax?: number;
   oldPrice?: number;
   image: string;
   images?: string[];
   category: ProductCategory;
   tags?: string[];
+  badge?: string;
   isNew?: boolean;
   isBestSeller?: boolean;
   isTrending?: boolean;
@@ -48,4 +51,12 @@ export interface CategoryNav {
   slug: string;
   image: string;
   href: string;
+}
+
+export interface ShowcaseVideo {
+  id: string;
+  src: string;
+  title: string;
+  category: string;
+  poster?: string;
 }

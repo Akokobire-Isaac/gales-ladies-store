@@ -7,19 +7,14 @@ import { cn } from "@/lib/utils";
 const categories: (ProductCategory | "all")[] = [
   "all",
   "Dresses",
-  "Office Wear",
-  "Tops",
-  "Handbags",
-  "Heels",
-  "Safety Boots",
-  "Accessories",
+  "Sandals",
+  "Unisex Safety Boots",
 ];
 
 const sortOptions: { value: SortOption; label: string }[] = [
   { value: "newest", label: "Newest" },
   { value: "price-asc", label: "Price: Low to High" },
   { value: "price-desc", label: "Price: High to Low" },
-  { value: "popularity", label: "Popularity" },
 ];
 
 interface ProductFiltersProps {

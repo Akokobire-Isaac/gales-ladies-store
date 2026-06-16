@@ -29,7 +29,7 @@ export function Categories() {
             >
               <Link
                 href={cat.href}
-                className="group relative block aspect-[4/5] overflow-hidden rounded-sm"
+                className="group relative block aspect-[4/5] overflow-hidden rounded-2xl"
               >
                 <Image
                   src={cat.image}

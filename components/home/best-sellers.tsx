@@ -1,6 +1,7 @@
 import Link from "next/link";
-import { Button } from "@/components/ui/button";
 import { ProductGrid } from "@/components/product/product-grid";
+import { buttonVariants } from "@/components/ui/button";
+import { cn } from "@/lib/utils";
 import { getBestSellers } from "@/lib/products";
 
 export function BestSellers() {
@@ -9,20 +10,31 @@ export function BestSellers() {
   return (
     <section className="py-20 sm:py-28" aria-labelledby="bestsellers-heading">
       <div className="mx-auto max-w-7xl px-4 sm:px-6 lg:px-8">
-        <div className="mb-12 flex flex-col items-center justify-between gap-4 sm:flex-row">
+        <div className="mb-12 flex flex-col items-start justify-between gap-6 sm:flex-row sm:items-end">
           <div>
-            <p className="text-xs uppercase tracking-[0.3em] text-gold">Curated</p>
+            <p className="text-xs font-medium uppercase tracking-[0.35em] text-gold">
+              Customer Favorites
+            </p>
+
             <h2
               id="bestsellers-heading"
-              className="mt-2 font-heading text-3xl font-light tracking-wide"
+              className="mt-3 font-heading text-3xl font-light tracking-wide sm:text-4xl"
             >
               Best Sellers
             </h2>
           </div>
-          <Button variant="outline" render={<Link href="/shop" />}>
+
+          <Link
+            href="/shop"
+            className={cn(
+              buttonVariants({ variant: "outline" }),
+              "rounded-full border-foreground hover:bg-foreground hover:text-background"
+            )}
+          >
             View All
-          </Button>
+          </Link>
         </div>
+
         <ProductGrid products={products} />
       </div>
     </section>

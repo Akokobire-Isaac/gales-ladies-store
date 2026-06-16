@@ -7,9 +7,9 @@ export const BRAND_DESCRIPTION =
 /** Primary logo — also supports /images/logo.png if you add it */
 export const LOGO_PATH = "/images/logo.jpeg";
 export const LOGO_FALLBACK = "/images/logo.png";
-/** Add public/images/hero.jpg to use a dedicated hero; falls back automatically */
-export const HERO_IMAGE_PRIMARY = "/images/hero.jpg";
-export const HERO_IMAGE_FALLBACK = "/images/dress11.jpeg";
+/** Optional: add public/images/hero.jpg for a dedicated hero image */
+export const HERO_IMAGE_PRIMARY = "/images/dress54.jpeg";
+export const HERO_IMAGE_FALLBACK = "/images/dress54.jpeg";
 
 export const WHATSAPP_NUMBER = "0249938095";
 export const WHATSAPP_URL = "https://wa.me/233249938095";
