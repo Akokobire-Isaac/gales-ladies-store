@@ -62,9 +62,9 @@ export function Hero() {
             transition={{ duration: 0.8, delay: 0.25 }}
             className="mt-6 max-w-md text-sm leading-relaxed text-white/85 sm:text-base"
           >
-            Discover curated dresses, elegant sandals, and professional safety
-            boots — crafted for the modern Ghanaian woman who demands quality,
-            style, and confidence.
+            Discover curated dresses, elegant sandals and professional safety
+            boots crafted for the modern Ghanaian woman who demands quality,
+            style and confidence.
           </motion.p>
 
           <motion.div

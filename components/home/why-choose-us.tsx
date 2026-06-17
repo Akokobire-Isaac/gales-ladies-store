@@ -15,7 +15,7 @@ const features = [
     icon: Award,
     title: "Quality Assurance",
     description:
-      "Every piece is carefully inspected for premium fabrics, fit, and lasting elegance.",
+      "Every piece is carefully inspected for premium fabrics, fit and lasting elegance.",
   },
   {
     icon: Shield,
@@ -27,7 +27,7 @@ const features = [
     icon: Headphones,
     title: "Customer Support",
     description:
-      "Our friendly team is ready to help with sizing, orders, and styling advice.",
+      "Our friendly team is ready to help with sizing, orders and styling advice.",
   },
 ];
 

@@ -25,7 +25,7 @@ export function FeaturedCollection() {
               Featured Collection
             </h2>
             <p className="mt-3 max-w-lg text-sm text-muted-foreground">
-              Handpicked pieces that define elegance — from statement dresses to
+              Handpicked pieces that define elegance from statement dresses to
               timeless essentials.
             </p>
           </div>

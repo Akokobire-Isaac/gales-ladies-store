@@ -82,7 +82,7 @@ export function VideoShowcase() {
               Video Showcase
             </h2>
             <p className="mt-3 max-w-lg text-sm text-white/70">
-              Watch our latest dresses, sandals, and safety boots come to life.
+              Watch our latest dresses, sandals and safety boots come to life.
             </p>
           </div>
         </motion.div>

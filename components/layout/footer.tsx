@@ -123,7 +123,7 @@ export function Footer() {
             © {new Date().getFullYear()} {BRAND_NAME}. All rights reserved.
           </p>
           <p className="text-xs text-beige-warm/60">
-            Premium Ghanaian Women&apos;s Fashion
+            Quality Ghanaian Women&apos;s Fashion
           </p>
         </div>
       </div>
