@@ -11,7 +11,7 @@ export const products: Product[] = [
     name: "Royal Plum Pleated Executive Dress",
     slug: "elegant-office-dress",
     description:
-      "A royal plum sheath dress with a bow-accented neckline, gold shoulder buttons, and a knife-pleated hem — commanding elegance for the boardroom and beyond.",
+      "A royal plum sheath dress with a bow-accented neckline, gold shoulder buttons and a knife-pleated hem — commanding elegance for the boardroom and beyond.",
     price: 165,
     oldPrice: 180,
     image: "/images/dress2.jpeg",
@@ -29,7 +29,7 @@ export const products: Product[] = [
     name: "Magenta Rosette Executive Dress",
     slug: "satin-evening-gown",
     description:
-      "A magenta A-line midi with a statement shoulder rosette and gold double-ring belt — bold feminine authority for the modern Ghanaian executive.",
+      "A magenta A-line midi with a statement shoulder rosette and gold double-ring belt bold feminine authority for the modern Ghanaian executive.",
     price: 175,
     image: "/images/dress9.jpeg",
     images: ["/images/dress9.jpeg", "/images/dress10.jpeg"],
@@ -43,7 +43,7 @@ export const products: Product[] = [
     name: "Classic Beige Pleated Dress",
     slug: "classic-a-line-dress",
     description:
-      "A beige blazer-style dress with puff sleeves, a belted waist, and a crisply pleated skirt — timeless neutral sophistication for every workday.",
+      "A beige blazer-style dress with puff sleeves, a belted waist and a crisply pleated skirt  timeless neutral sophistication for every workday.",
     price: 140,
     oldPrice: 165,
     image: "/images/dress5.jpeg",
@@ -57,7 +57,7 @@ export const products: Product[] = [
     name: "Royal Violet Peplum Blazer Dress",
     slug: "floral-print-midi",
     description:
-      "A royal violet blazer dress with gold-button waist detail and a pleated A-line skirt — structured power dressing with a feminine silhouette.",
+      "A royal violet blazer dress with gold button waist detail and a pleated A-line skirt structured power dressing with a feminine silhouette.",
     price: 125,
     image: "/images/dress7.jpeg",
     category: "Dresses",
@@ -70,7 +70,7 @@ export const products: Product[] = [
     name: "Midnight Bow Accent A-Line Dress",
     slug: "statement-evening-dress",
     description:
-      "A navy A-line dress with a gold chest button, bow-accented belt, and softly pleated skirt — refined evening elegance for formal corporate events.",
+      "A navy A-line dress with a gold chest button, bow-accented belt and softly pleated skirt refined evening elegance for formal corporate events.",
     price: 180,
     image: "/images/dress11.jpeg",
     images: ["/images/dress11.jpeg", "/images/dress12.jpeg"],
@@ -84,7 +84,7 @@ export const products: Product[] = [
     name: "Heritage Plum Collar Midi Dress",
     slug: "chic-wrap-dress",
     description:
-      "A deep plum fit-and-flare midi with a Peter Pan collar, side bow detail, and pleated skirt — vintage-inspired grace for the discerning professional.",
+      "A deep plum fit-and-flare midi with a Peter Pan collar, side bow detail and pleated skirt vintage-inspired grace for the discerning professional.",
     price: 155,
     image: "/images/dress14.jpeg",
     category: "Dresses",
@@ -96,7 +96,7 @@ export const products: Product[] = [
     name: "Coral Rosette Executive Dress",
     slug: "executive-blazer-set",
     description:
-      "A coral A-line midi with dimensional fabric rosettes, a crystal-buckle belt, and three-quarter sleeves — signature elegance for leadership roles.",
+      "A coral A-line midi with dimensional fabric rosettes, a crystal-buckle belt and three-quarter sleeves signature elegance for leadership roles.",
     price: 550,
     image: "/images/dress13.jpeg",
     category: "Office Wear",
@@ -111,7 +111,7 @@ export const products: Product[] = [
     name: "Executive Magenta Balloon Sleeve Dress",
     slug: "power-suit-look",
     description:
-      "A magenta A-line dress with voluminous balloon sleeves and a contrasting white belt — dramatic yet polished for the woman who leads from the front.",
+      "A magenta A-line dress with voluminous balloon sleeves and a contrasting white belt dramatic yet polished for the woman who leads from the front.",
     price: 420,
     image: "/images/dress8.jpeg",
     category: "Office Wear",
@@ -137,7 +137,7 @@ export const products: Product[] = [
     name: "Sage Executive Vest Set",
     slug: "structured-peplum-top",
     description:
-      "An olive-green sleeveless blazer with a tie belt and matching creased trousers — understated executive tailoring for the modern professional.",
+      "An olive-green sleeveless blazer with a tie belt and matching creased trousers understated executive tailoring for the modern professional.",
     price: 195,
     image: "/images/dress15.jpeg",
     category: "Tops",
@@ -190,7 +190,7 @@ export const products: Product[] = [
     name: "Signature Gold Horsebit Slingback",
     slug: "luxury-stiletto-heel",
     description:
-      "Pointed-toe slingback kitten heels with a gold horsebit detail and adjustable strap — understated luxury for boardroom to banquet.",
+      "Pointed-toe slingback kitten heels with a gold horsebit detail and adjustable strap understated luxury for boardroom to banquet.",
     price: 135,
     oldPrice: 150,
     image: "/images/heels.jpeg",
@@ -206,7 +206,7 @@ export const products: Product[] = [
     name: "Nude Patent D'Orsay Pump",
     slug: "block-heel-sandal",
     description:
-      "Glossy nude patent D'Orsay pumps with a slender stiletto heel — the essential neutral heel for polished office and evening wear.",
+      "Glossy nude patent D'Orsay pumps with a slender stiletto heel the essential neutral heel for polished office and evening wear.",
     price: 120,
     image: "/images/heels2.jpeg",
     category: "Sandals",
@@ -219,7 +219,7 @@ export const products: Product[] = [
     name: "Crystal Butterfly Ankle Strap Heel",
     slug: "classic-pump",
     description:
-      "Square-toe ankle-strap heels with diamanté butterfly motifs and a sculpted spool heel — glamorous refinement for formal events and executive occasions.",
+      "Square-toe ankle-strap heels with diamanté butterfly motifs and a sculpted spool heel glamorous refinement for formal events and executive occasions.",
     price: 145,
     image: "/images/heels4.jpeg",
     category: "Heels",
@@ -231,7 +231,7 @@ export const products: Product[] = [
     name: "Heritage Leather Safety Boot",
     slug: "professional-safety-boot",
     description:
-      "Premium black high-top safety boots with contrast stitching, metal eyelets, and a heavy-duty lug sole — durable protection with a refined professional finish.",
+      "Premium black high-top safety boots with contrast stitching, metal eyelets and a heavy-duty lug sole durable protection with a refined professional finish.",
     price: 300,
     image: "/images/safetyboot.jpeg",
     images: ["/images/safetyboot.jpeg", "/images/safetyboot2.jpeg"],
@@ -246,7 +246,7 @@ export const products: Product[] = [
     name: "Prestige ZSTEP Industrial Boot",
     slug: "premium-work-boot",
     description:
-      "ZSTEP-engineered safety boots with pebbled leather panels, oil-resistant PU sole, and reinforced ankle support — built for demanding worksites without compromising on quality.",
+      "ZSTEP-engineered safety boots with pebbled leather panels, oil-resistant PU sole and reinforced ankle support built for demanding worksites without compromising on quality.",
     price: 300,
     image: "/images/safetyboot2.jpeg",
     category: "Unisex Safety Boots",
@@ -283,7 +283,7 @@ export const products: Product[] = [
     name: "Prestige Peplum Wide-Leg Suit",
     slug: "modern-midi-dress",
     description:
-      "A peplum blazer with a heart-buckle belt and matching wide-leg trousers — available in mustard, brown, black, white, and blush for versatile executive styling.",
+      "A peplum blazer with a heart-buckle belt and matching wide-leg trousers available in mustard, brown, black, white, and blush for versatile executive styling.",
     price: 145,
     image: "/images/dress3.jpeg",
     category: "Dresses",
@@ -295,7 +295,7 @@ export const products: Product[] = [
     name: "Royal Cobalt Accordion Pleat Dress",
     slug: "office-ready-dress",
     description:
-      "A royal blue midi with a gold double-ring belt and dramatic accordion pleats — a power-dressing staple for the woman who commands every room.",
+      "A royal blue midi with a gold double-ring belt and dramatic accordion pleats a power-dressing staple for the woman who commands every room.",
     price: 160,
     oldPrice: 180,
     image: "/images/dress10.jpeg",
@@ -309,7 +309,7 @@ export const products: Product[] = [
     name: "Sky Stripe Executive Vest Set",
     slug: "luxury-lace-dress",
     description:
-      "A cornflower pinstripe waistcoat with brown buttons and matching wide-leg trousers — breezy tailored elegance for warm-weather executive dressing.",
+      "A cornflower pinstripe waistcoat with brown buttons and matching wide-leg trousers breezy tailored elegance for warm-weather executive dressing.",
     price: 170,
     image: "/images/dress16.jpeg",
     category: "Dresses",
@@ -358,7 +358,7 @@ export const products: Product[] = [
     name: "Midnight Crystal Bow Slingback",
     slug: "strappy-heeled-sandal",
     description:
-      "Matte black pointed-toe slingbacks with a crystal-embellished bow and flared stiletto heel — evening glamour with boardroom poise.",
+      "Matte black pointed-toe slingbacks with a crystal-embellished bow and flared stiletto heel evening glamour with boardroom poise.",
     price: 130,
     image: "/images/heels3.jpeg",
     category: "Sandals",
@@ -370,7 +370,7 @@ export const products: Product[] = [
     name: "Executive Patent Stiletto Pump",
     slug: "luxury-flat-sandal",
     description:
-      "High-gloss patent stiletto pumps in blush, white, nude, and black — the definitive heel collection for polished professional and formal dressing.",
+      "High-gloss patent stiletto pumps in blush, white, nude, and black  the definitive heel collection for polished professional and formal dressing.",
     price: 110,
     image: "/images/heels7.jpeg",
     category: "Sandals",
@@ -383,7 +383,7 @@ export const products: Product[] = [
     name: "Blush Crystal Flared Slingback",
     slug: "pointed-toe-heel",
     description:
-      "Blush satin slingbacks with a crystal-embellished toe emblem and sculptural flared block heel — couture-inspired glamour for special occasions.",
+      "Blush satin slingbacks with a crystal-embellished toe emblem and sculptural flared block heel  couture-inspired glamour for special occasions.",
     price: 150,
     image: "/images/heels5.jpeg",
     category: "Heels",
@@ -396,7 +396,7 @@ export const products: Product[] = [
     name: "Midnight Patent Power Stiletto",
     slug: "comfort-low-heel",
     description:
-      "Jet-black patent pointed-toe stilettos with a high slender heel — the ultimate power pump for commanding presence at work and formal events.",
+      "Jet-black patent pointed-toe stilettos with a high slender heel the ultimate power pump for commanding presence at work and formal events.",
     price: 110,
     image: "/images/heels6.jpeg",
     category: "Heels",
