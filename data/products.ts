@@ -11,7 +11,7 @@ export const products: Product[] = [
     name: "Royal Plum Pleated Executive Dress",
     slug: "elegant-office-dress",
     description:
-      "A royal plum sheath dress with a bow-accented neckline, gold shoulder buttons and a knife-pleated hem — commanding elegance for the boardroom and beyond.",
+      "A royal plum sheath dress with a bow-accented neckline, gold shoulder buttons and a knife-pleated hem commanding elegance for the boardroom and beyond.",
     price: 165,
     oldPrice: 180,
     image: "/images/dress2.jpeg",
