@@ -1,8 +1,8 @@
 "use client";
 
 import { useEffect, useMemo, useState } from "react";
-import Image from "next/image";
 import Link from "next/link";
+import { ProductImageFrame } from "@/components/product/product-image";
 import { Search } from "lucide-react";
 import {
   Dialog,
@@ -67,15 +67,12 @@ export function SearchModal({ open, onOpenChange }: SearchModalProps) {
                   onClick={() => onOpenChange(false)}
                   className="flex items-center gap-4 py-3 transition-colors hover:bg-muted/50"
                 >
-                  <div className="relative size-14 shrink-0 overflow-hidden rounded-sm bg-muted">
-                    <Image
-                      src={product.image}
-                      alt={product.name}
-                      fill
-                      className="object-cover"
-                      sizes="56px"
-                    />
-                  </div>
+                  <ProductImageFrame
+                    frameClassName="size-14 shrink-0 rounded-sm"
+                    src={product.image}
+                    alt={product.name}
+                    sizes="56px"
+                  />
                   <div className="min-w-0 flex-1">
                     <p className="truncate text-sm font-medium">{product.name}</p>
                     <p className="text-xs text-muted-foreground">

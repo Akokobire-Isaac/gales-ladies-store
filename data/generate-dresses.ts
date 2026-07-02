@@ -32,7 +32,7 @@ const DRESS_CATALOG: Record<number, { name: string; description: string }> = {
   18: {
     name: "Executive Burgundy Vest Set",
     description:
-      "A wine-burgundy waistcoat and wide-leg trouser set layered over a polka-dot blouse — bold executive tailoring for the woman who leads with style.",
+      "A wine-burgundy waistcoat and wide-leg trouser set layered over a polka-dot blouse bold executive tailoring for the woman who leads with style.",
   },
   19: {
     name: "Ivory Grace Wide-Leg Set",
@@ -42,7 +42,7 @@ const DRESS_CATALOG: Record<number, { name: string; description: string }> = {
   20: {
     name: "Midnight Executive Waistcoat Set",
     description:
-      "A black tie-belt waistcoat over a crisp white shirt with flowing wide-leg trousers — timeless monochrome power dressing at its finest.",
+      "A black tie-belt waistcoat over a crisp white shirt with flowing wide-leg trousers timeless monochrome power dressing at its finest.",
   },
   21: {
     name: "Terracotta Executive Vest Set",
@@ -52,17 +52,17 @@ const DRESS_CATALOG: Record<number, { name: string; description: string }> = {
   22: {
     name: "Emerald Grace Peplum Set",
     description:
-      "An emerald peplum blouse adorned with pearl-tipped floral lace appliqués, paired with a tiered midi skirt for refined feminine authority.",
+      "An emerald peplum blouse adorned with pearl-tipped floral lace appliqués paired with a tiered midi skirt for refined feminine authority.",
   },
   23: {
     name: "Forest Executive Waistcoat Set",
     description:
-      "A deep forest-green waistcoat with a bow-tie belt, crisp white shirt, and wide-leg trousers — commanding elegance rooted in nature-inspired tones.",
+      "A deep forest-green waistcoat with a bow-tie belt, crisp white shirt and wide-leg trousers commanding elegance rooted in nature-inspired tones.",
   },
   24: {
     name: "Royal Burgundy Waistcoat Set",
     description:
-      "A burgundy tie-belt waistcoat layered over a white collared shirt with matching tailored trousers — a signature look for the discerning professional.",
+      "A burgundy tie-belt waistcoat layered over a white collared shirt with matching tailored trousers, a signature look for the discerning professional.",
   },
   25: {
     name: "Royal Plum Scallop Blouse Set",
@@ -72,12 +72,12 @@ const DRESS_CATALOG: Record<number, { name: string; description: string }> = {
   26: {
     name: "Camel Executive Vest Set",
     description:
-      "A caramel-toned sleeveless vest with gold buttons and matching wide-leg trousers — understated luxury for the executive who values timeless neutrals.",
+      "A caramel-toned sleeveless vest with gold buttons and matching wide-leg trousers understated luxury for the executive who values timeless neutrals.",
   },
   27: {
     name: "Magenta Rosette Vest Set",
     description:
-      "A vivid magenta tailored vest with a statement fabric rosette and matching creased trousers — fearless colour for the woman at the top.",
+      "A vivid magenta tailored vest with a statement fabric rosette and matching creased trousers fearless colour for the woman at the top.",
   },
   28: {
     name: "Terracotta Elite Blazer Set",
@@ -92,12 +92,12 @@ const DRESS_CATALOG: Record<number, { name: string; description: string }> = {
   30: {
     name: "Heritage Brown Elite Blazer Set",
     description:
-      "A cinnamon-brown belted blazer with crisp white lapel detailing and wide-leg trousers — warm, grounded elegance for the corporate professional.",
+      "A cinnamon-brown belted blazer with crisp white lapel detailing and wide-leg trousers warm, grounded elegance for the corporate professional.",
   },
   31: {
     name: "Emerald Executive Shirt Dress",
     description:
-      "A belted shirt dress with a notched lapel, button-front closure, and pleated A-line skirt — structured sophistication in a single polished piece.",
+      "A belted shirt dress with a notched lapel, button-front closure, and pleated A-line skirt structured sophistication in a single polished piece.",
   },
   32: {
     name: "Sage Cascade Ruffle Dress",
@@ -107,52 +107,52 @@ const DRESS_CATALOG: Record<number, { name: string; description: string }> = {
   33: {
     name: "Noir Contrast Blazer Dress",
     description:
-      "A black A-line blazer dress with a crisp white notched collar, silver-buckle belt, and structured short sleeves — boardroom authority in one elegant silhouette.",
+      "A black A-line blazer dress with a crisp white notched collar, silver-buckle belt, and structured short sleeves boardroom authority in one elegant silhouette.",
   },
   34: {
     name: "Midnight Cascade Midi Dress",
     description:
-      "A navy sheath midi with a sculptural shoulder-to-hip ruffle detail and three-quarter sleeves — architectural elegance for the modern office.",
+      "A navy sheath midi with a sculptural shoulder-to-hip ruffle detail and three-quarter sleeves architectural elegance for the modern office.",
   },
   35: {
     name: "Signature Geo-Piped Sheath Dress",
     description:
-      "A form-fitting midi dress with bold white geometric piping across the bodice and skirt — a designer statement for high-level corporate occasions.",
+      "A form-fitting midi dress with bold white geometric piping across the bodice and skirt a designer statement for high-level corporate occasions.",
   },
   36: {
     name: "Forest Peplum Corporate Set",
     description:
-      "A three-piece set featuring a white blouse, peplum waistcoat with brooch detail, and knee-length pencil skirt — couture tailoring for the executive woman.",
+      "A three-piece set featuring a white blouse, peplum waistcoat with brooch detail, and knee-length pencil skirt  couture tailoring for the executive woman.",
   },
   37: {
     name: "Royal Cobalt Zip Accent Dress",
     description:
-      "A royal-blue A-line dress with a diagonal gold zipper neckline and belted waist — contemporary polish with a touch of runway flair.",
+      "A royal-blue A-line dress with a diagonal gold zipper neckline and belted waist contemporary polish with a touch of runway flair.",
   },
   38: {
     name: "Signature Twist-Waist Midi Dress",
     description:
-      "A knee-length midi with a gathered twist-waist detail and gold brooch accent, available in black, burgundy, and navy for versatile executive elegance.",
+      "A knee-length midi with a gathered twist-waist detail and gold brooch accent, available in black, burgundy and navy for versatile executive elegance.",
   },
   39: {
     name: "Heritage Wrap Pleated Dress",
     description:
-      "A blazer-collar wrap dress with decorative button detailing, pleated A-line skirt, and side pockets — refined authority with effortless movement.",
+      "A blazer-collar wrap dress with decorative button detailing, pleated A-line skirt, and side pockets refined authority with effortless movement.",
   },
   40: {
     name: "Midnight Pleated Executive Dress",
     description:
-      "A navy V-neck dress with a gold-buckle belt and full accordion-pleated skirt — graceful structure for formal office events and evening engagements.",
+      "A navy V-neck dress with a gold-buckle belt and full accordion-pleated skirt graceful structure for formal office events and evening engagements.",
   },
   41: {
     name: "Royal Cobalt Wrap Midi Dress",
     description:
-      "A vibrant cobalt wrap-front midi with short sleeves and a rectangular gold-buckle belt — confident colour for the woman who owns the room.",
+      "A vibrant cobalt wrap-front midi with short sleeves and a rectangular gold-buckle belt confident colour for the woman who owns the room.",
   },
   42: {
     name: "Heritage Olive Pleat Dress",
     description:
-      "An olive-green A-line midi with pin-tuck bodice detailing, flutter sleeves, and gold button accents — earthy sophistication for everyday executive wear.",
+      "An olive-green A-line midi with pin-tuck bodice detailing, flutter sleeves, and gold button accents earthy sophistication for everyday executive wear.",
   },
   43: {
     name: "Classic Beige Pleated Blazer Dress",
@@ -162,27 +162,27 @@ const DRESS_CATALOG: Record<number, { name: string; description: string }> = {
   44: {
     name: "Executive Denim Zip Midi Dress",
     description:
-      "A dark-wash sleeveless denim midi with a full-length front zipper and panelled A-line skirt — smart casual redefined for the modern professional.",
+      "A dark-wash sleeveless denim midi with a full-length front zipper and panelled A-line skirt smart casual redefined for the modern professional.",
   },
   45: {
     name: "Heritage Denim Belted Midi Dress",
     description:
-      "A light-wash denim shirt dress with puff sleeves, button-front closure, and a tie-waist belt — relaxed refinement for creative corporate settings.",
+      "A light-wash denim shirt dress with puff sleeves, button-front closure, and a tie-waist belt relaxed refinement for creative corporate settings.",
   },
   46: {
     name: "Signature Denim Vest Maxi Dress",
     description:
-      "A medium-wash sleeveless denim shirt dress with chest pockets, tie belt, and front slit — effortless executive denim from desk to dinner.",
+      "A medium-wash sleeveless denim shirt dress with chest pockets, tie belt, and front slit effortless executive denim from desk to dinner.",
   },
   47: {
     name: "Corporate Tiered Denim Dress",
     description:
-      "A structured denim shirt dress with flap pockets and a tiered flared skirt — playful yet professional, perfect for the contemporary office.",
+      "A structured denim shirt dress with flap pockets and a tiered flared skirt playful yet professional perfect for the contemporary office.",
   },
   48: {
     name: "Executive Belted Denim Dress",
     description:
-      "A sleeveless medium-wash denim midi with a silver-buckle belt and button-front placket — clean lines and confident simplicity for workday elegance.",
+      "A sleeveless medium-wash denim midi with a silver-buckle belt and button-front placket clean lines and confident simplicity for workday elegance.",
   },
   49: {
     name: "Boardroom Denim Shirt Dress",
@@ -192,27 +192,27 @@ const DRESS_CATALOG: Record<number, { name: string; description: string }> = {
   50: {
     name: "Prestige Denim Executive Dress",
     description:
-      "A V-neck denim midi with a structured waist and softly pleated skirt — the cornerstone of a refined executive denim wardrobe.",
+      "A V-neck denim midi with a structured waist and softly pleated skirtthe cornerstone of a refined executive denim wardrobe.",
   },
   51: {
     name: "Editorial Ruffle Denim Dress",
     description:
-      "A denim shirt dress with ruffled sleeve cuffs, chest pockets, and a tiered ruffle hem — fashion-forward denim for the style-conscious professional.",
+      "A denim shirt dress with ruffled sleeve cuffs, chest pockets, and a tiered ruffle hem fashion-forward denim for the style-conscious professional.",
   },
   52: {
     name: "Sand Pleated Shoulder Midi Dress",
     description:
-      "A sleeveless sand-toned double-breasted midi with pleated shoulder detailing and a slim belt — minimalist luxury for formal office occasions.",
+      "A sleeveless sand-toned double-breasted midi with pleated shoulder detailing and a slim belt minimalist luxury for formal office occasions.",
   },
   53: {
     name: "Prestige Button-Front Midi Dress",
     description:
-      "A sleeveless V-neck shirt dress with gold-button placket, patch pockets, and a black leather belt — executive poise in a single refined silhouette.",
+      "A sleeveless V-neck shirt dress with gold-button placket, patch pockets and a black leather belt executive poise in a single refined silhouette.",
   },
   54: {
     name: "Monarch Cocoa Waistcoat Set",
     description:
-      "A chocolate-brown tie-belt waistcoat over a white shirt with matching tailored trousers — rich, commanding elegance for the woman of distinction.",
+      "A chocolate-brown tie-belt waistcoat over a white shirt with matching tailored trousers rich, commanding elegance for the woman of distinction.",
   },
 };
 

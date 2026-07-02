@@ -4,6 +4,7 @@ import Image from "next/image";
 import Link from "next/link";
 import { InstagramIcon } from "@/components/icons";
 import { SOCIAL } from "@/lib/constants";
+import { withImageVersion } from "@/lib/image-url";
 
 const galleryImages = [
   "/images/dress11.jpeg",
@@ -47,7 +48,7 @@ export function SocialShowcase() {
               }`}
             >
               <Image
-                src={src}
+                src={withImageVersion(src)}
                 alt={`Gale's Ladies Apparel style ${i + 1}`}
                 fill
                 sizes="(max-width: 640px) 50vw, 33vw"

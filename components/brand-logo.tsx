@@ -3,6 +3,7 @@
 import { useState } from "react";
 import Image from "next/image";
 import { LOGO_FALLBACK, LOGO_PATH } from "@/lib/constants";
+import { withImageVersion } from "@/lib/image-url";
 import { cn } from "@/lib/utils";
 
 interface BrandLogoProps {
@@ -20,7 +21,8 @@ export function BrandLogo({
   className,
   priority,
 }: BrandLogoProps) {
-  const [src, setSrc] = useState(LOGO_PATH);
+  const [useFallback, setUseFallback] = useState(false);
+  const src = withImageVersion(useFallback ? LOGO_FALLBACK : LOGO_PATH);
 
   return (
     <Image
@@ -31,7 +33,7 @@ export function BrandLogo({
       className={cn("object-contain", className)}
       priority={priority}
       onError={() => {
-        if (src !== LOGO_FALLBACK) setSrc(LOGO_FALLBACK);
+        if (!useFallback) setUseFallback(true);
       }}
     />
   );

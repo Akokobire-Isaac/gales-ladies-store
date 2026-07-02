@@ -1,7 +1,7 @@
 "use client";
 
-import Image from "next/image";
 import Link from "next/link";
+import { ProductImageFrame } from "@/components/product/product-image";
 import { Minus, Plus, Trash2 } from "lucide-react";
 import { Button } from "@/components/ui/button";
 import { useCartStore } from "@/store/cart-store";
@@ -14,15 +14,11 @@ export function CartItemRow({ item }: { item: CartItemType }) {
 
   return (
     <div className="flex gap-4 border-b border-border/40 py-4">
-      <Link
-        href={`/product/${item.product.id}`}
-        className="relative size-24 shrink-0 overflow-hidden rounded-sm bg-muted"
-      >
-        <Image
+      <Link href={`/product/${item.product.id}`} className="shrink-0">
+        <ProductImageFrame
+          frameClassName="size-24 rounded-sm"
           src={item.product.image}
           alt={item.product.name}
-          fill
-          className="object-cover"
           sizes="96px"
         />
       </Link>

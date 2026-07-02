@@ -8,7 +8,14 @@ const nextConfig: NextConfig = {
   images: {
     formats: ["image/avif", "image/webp"],
     remotePatterns: [],
-    minimumCacheTTL: 60 * 60 * 24 * 30,
+    localPatterns: [
+      {
+        pathname: "/images/**",
+        // Omit search so ?v= cache-bust params from lib/image-url.ts are allowed.
+      },
+    ],
+    // Shorter TTL; primary cache busting is ?v= on image URLs (lib/image-url.ts).
+    minimumCacheTTL: 60 * 60 * 24,
   },
   compress: true,
 };

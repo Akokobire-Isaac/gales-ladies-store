@@ -5,6 +5,7 @@ import {
   LOGO_PATH,
   SITE_URL,
 } from "./constants";
+import { withImageVersion } from "./image-url";
 
 export const defaultMetadata: Metadata = {
   metadataBase: new URL(SITE_URL),
@@ -31,13 +32,13 @@ export const defaultMetadata: Metadata = {
     siteName: BRAND_NAME,
     title: `${BRAND_NAME} | Premium Women's Fashion Ghana`,
     description: BRAND_DESCRIPTION,
-    images: [{ url: LOGO_PATH, width: 512, height: 512, alt: BRAND_NAME }],
+    images: [{ url: withImageVersion(LOGO_PATH), width: 512, height: 512, alt: BRAND_NAME }],
   },
   twitter: {
     card: "summary_large_image",
     title: `${BRAND_NAME} | Premium Women's Fashion Ghana`,
     description: BRAND_DESCRIPTION,
-    images: [LOGO_PATH],
+    images: [withImageVersion(LOGO_PATH)],
   },
   robots: { index: true, follow: true },
 };
@@ -55,7 +56,7 @@ export function productJsonLd(product: {
     "@type": "Product",
     name: product.name,
     description: product.description,
-    image: `${SITE_URL}${product.image}`,
+    image: `${SITE_URL}${withImageVersion(product.image)}`,
     sku: product.id,
     brand: { "@type": "Brand", name: BRAND_NAME },
     category: product.category,
@@ -76,7 +77,7 @@ export function organizationJsonLd() {
     name: BRAND_NAME,
     description: BRAND_DESCRIPTION,
     url: SITE_URL,
-    logo: `${SITE_URL}${LOGO_PATH}`,
+    logo: `${SITE_URL}${withImageVersion(LOGO_PATH)}`,
     areaServed: "GH",
     priceRange: "$$",
   };

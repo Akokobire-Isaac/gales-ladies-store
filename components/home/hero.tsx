@@ -12,9 +12,13 @@ import {
   HERO_IMAGE_FALLBACK,
   HERO_IMAGE_PRIMARY,
 } from "@/lib/constants";
+import { withImageVersion } from "@/lib/image-url";
 
 export function Hero() {
-  const [heroSrc, setHeroSrc] = useState(HERO_IMAGE_PRIMARY);
+  const [useFallback, setUseFallback] = useState(false);
+  const heroSrc = withImageVersion(
+    useFallback ? HERO_IMAGE_FALLBACK : HERO_IMAGE_PRIMARY
+  );
 
   return (
     <section className="relative flex min-h-[100svh] items-center overflow-hidden">
@@ -26,9 +30,7 @@ export function Hero() {
         className="object-cover"
         sizes="100vw"
         onError={() => {
-          if (heroSrc !== HERO_IMAGE_FALLBACK) {
-            setHeroSrc(HERO_IMAGE_FALLBACK);
-          }
+          if (!useFallback) setUseFallback(true);
         }}
       />
 
@@ -103,7 +105,7 @@ export function Hero() {
           className="relative hidden aspect-[4/5] overflow-hidden rounded-2xl shadow-2xl lg:block"
         >
           <Image
-            src="/images/dress54.jpeg"
+            src={withImageVersion("/images/dress54.jpeg")}
             alt="Featured fashion collection"
             fill
             className="object-cover"

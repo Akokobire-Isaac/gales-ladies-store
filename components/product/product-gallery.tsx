@@ -1,7 +1,7 @@
 "use client";
 
 import { useState } from "react";
-import Image from "next/image";
+import { ProductImage } from "@/components/product/product-image";
 import { cn } from "@/lib/utils";
 
 interface ProductGalleryProps {
@@ -17,7 +17,7 @@ export function ProductGallery({ images, name }: ProductGalleryProps) {
     <div className="space-y-4">
       <div
         className={cn(
-          "relative aspect-[3/4] overflow-hidden rounded-xl bg-muted",
+          "relative aspect-[3/4] w-full overflow-hidden rounded-xl bg-muted",
           zoomed && "cursor-zoom-out"
         )}
         onClick={() => setZoomed(!zoomed)}
@@ -26,13 +26,12 @@ export function ProductGallery({ images, name }: ProductGalleryProps) {
         onKeyDown={(e) => e.key === "Enter" && setZoomed(!zoomed)}
         aria-label={zoomed ? "Zoom out image" : "Zoom in image"}
       >
-        <Image
+        <ProductImage
           src={images[active]}
           alt={name}
-          fill
           sizes="(max-width: 1024px) 100vw, 50vw"
           className={cn(
-            "object-cover transition-transform duration-500",
+            "origin-top transition-transform duration-500",
             zoomed && "scale-150"
           )}
           priority
@@ -51,7 +50,7 @@ export function ProductGallery({ images, name }: ProductGalleryProps) {
               )}
               aria-label={`View image ${i + 1}`}
             >
-              <Image src={img} alt="" fill className="object-cover" sizes="80px" />
+              <ProductImage src={img} alt="" sizes="80px" />
             </button>
           ))}
         </div>

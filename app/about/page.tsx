@@ -1,6 +1,7 @@
 import type { Metadata } from "next";
 import Image from "next/image";
 import { BRAND_DESCRIPTION, BRAND_NAME } from "@/lib/constants";
+import { withImageVersion } from "@/lib/image-url";
 import { Counter } from "@/components/counter";
 
 export const metadata: Metadata = {
@@ -17,7 +18,7 @@ export default function AboutPage() {
       </h1>
       <div className="relative mt-10 aspect-[16/9] overflow-hidden rounded-sm bg-muted">
         <Image
-          src="/images/dress11.jpeg"
+          src={withImageVersion("/images/dress11.jpeg")}
           alt={BRAND_NAME}
           fill
           className="object-cover"

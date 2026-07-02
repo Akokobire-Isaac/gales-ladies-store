@@ -3,6 +3,7 @@ import { notFound } from "next/navigation";
 import { products } from "@/data/products";
 import { getProductById, getRelatedProducts } from "@/lib/products";
 import { productJsonLd } from "@/lib/seo";
+import { withImageVersion } from "@/lib/image-url";
 import { ProductDetailClient } from "@/components/product/product-detail-client";
 
 interface PageProps {
@@ -22,7 +23,7 @@ export async function generateMetadata({
   return {
     title: product.name,
     description: product.description,
-    openGraph: { images: [product.image] },
+    openGraph: { images: [withImageVersion(product.image)] },
   };
 }
 

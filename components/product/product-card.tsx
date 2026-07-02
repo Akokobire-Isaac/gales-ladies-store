@@ -1,7 +1,7 @@
 "use client";
 
-import Image from "next/image";
 import Link from "next/link";
+import { ProductImage } from "@/components/product/product-image";
 import { motion } from "framer-motion";
 import { Eye, MessageCircle } from "lucide-react";
 import { Badge } from "@/components/ui/badge";
@@ -34,13 +34,12 @@ export function ProductCard({
     >
       <div className="relative">
         <Link href={`/product/${product.id}`} className="block">
-          <div className="relative aspect-[3/4] overflow-hidden rounded-xl bg-muted shadow-sm transition-shadow duration-500 group-hover:shadow-xl">
-            <Image
+          <div className="relative aspect-[3/4] w-full overflow-hidden rounded-xl bg-muted shadow-sm transition-shadow duration-500 group-hover:shadow-xl">
+            <ProductImage
               src={product.image}
               alt={product.name}
-              fill
               sizes="(max-width: 640px) 50vw, (max-width: 1024px) 33vw, 25vw"
-              className="object-cover transition-transform duration-700 ease-out group-hover:scale-110"
+              className="origin-top transition-transform duration-700 ease-out group-hover:scale-110"
               priority={priority}
               loading={priority ? undefined : "lazy"}
             />

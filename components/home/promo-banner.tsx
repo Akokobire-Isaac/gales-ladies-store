@@ -5,12 +5,13 @@ import Link from "next/link";
 import { motion } from "framer-motion";
 import { Button } from "@/components/ui/button";
 import { BRAND_TAGLINE } from "@/lib/constants";
+import { withImageVersion } from "@/lib/image-url";
 
 export function PromoBanner() {
   return (
     <section className="relative overflow-hidden py-24 sm:py-32">
       <Image
-        src="/images/dress9.jpeg"
+        src={withImageVersion("/images/dress9.jpeg")}
         alt=""
         fill
         className="object-cover"

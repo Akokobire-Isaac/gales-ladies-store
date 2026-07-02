@@ -4,6 +4,7 @@ import Image from "next/image";
 import Link from "next/link";
 import { motion } from "framer-motion";
 import { categories } from "@/data/categories";
+import { withImageVersion } from "@/lib/image-url";
 
 export function Categories() {
   return (
@@ -32,7 +33,7 @@ export function Categories() {
                 className="group relative block aspect-[4/5] overflow-hidden rounded-2xl"
               >
                 <Image
-                  src={cat.image}
+                  src={withImageVersion(cat.image)}
                   alt={cat.name}
                   fill
                   sizes="(max-width: 640px) 50vw, 33vw"

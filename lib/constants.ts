@@ -1,3 +1,10 @@
+/**
+ * Bump when replacing files in public/images/ (or set NEXT_PUBLIC_IMAGE_CACHE_VERSION).
+ * Forces browsers and Next.js Image to fetch fresh optimized variants.
+ */
+export const IMAGE_CACHE_VERSION =
+  process.env.NEXT_PUBLIC_IMAGE_CACHE_VERSION ?? "20260701";
+
 export const BRAND_NAME = "Gale's Ladies Apparel";
 export const BRAND_TAGLINE =
   "Elegant fashion for modern professional women in Ghana.";

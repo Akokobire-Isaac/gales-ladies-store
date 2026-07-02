@@ -1,8 +1,8 @@
 "use client";
 
 import { useState } from "react";
-import Image from "next/image";
 import Link from "next/link";
+import { ProductImage } from "@/components/product/product-image";
 import { MessageCircle } from "lucide-react";
 import {
   Dialog,
@@ -52,12 +52,10 @@ export function QuickView({
       >
         <div className="grid lg:grid-cols-2">
           <div className="space-y-3 p-4 sm:p-6">
-            <div className="relative aspect-[3/4] overflow-hidden rounded-xl bg-muted">
-              <Image
+            <div className="relative aspect-[3/4] w-full overflow-hidden rounded-xl bg-muted">
+              <ProductImage
                 src={images[activeImage]}
                 alt={product.name}
-                fill
-                className="object-cover"
                 sizes="(max-width: 1024px) 100vw, 50vw"
                 priority
               />
@@ -77,13 +75,7 @@ export function QuickView({
                     )}
                     aria-label={`View image ${i + 1}`}
                   >
-                    <Image
-                      src={img}
-                      alt=""
-                      fill
-                      className="object-cover"
-                      sizes="80px"
-                    />
+                    <ProductImage src={img} alt="" sizes="80px" />
                   </button>
                 ))}
               </div>

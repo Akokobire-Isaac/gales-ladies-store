@@ -6,7 +6,14 @@ import { PageLoader } from "@/components/layout/page-loader";
 
 export function Providers({ children }: { children: React.ReactNode }) {
   return (
-    <ThemeProvider attribute="class" defaultTheme="light" enableSystem>
+    <ThemeProvider
+      attribute="class"
+      defaultTheme="light"
+      enableSystem
+      // React 19: next-themes injects an inline script for FOUC prevention;
+      // application/json avoids the "script tag in component" client warning.
+      scriptProps={{ type: "application/json" }}
+    >
       <PageLoader />
       {children}
       <Toaster

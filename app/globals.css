@@ -138,6 +138,17 @@
   }
 }
 
+@layer utilities {
+  /*
+   * Top-anchored cover crop hides bottom vendor watermarks without distorting
+   * aspect ratio. Tune --product-image-focus-y (30%–40%) if artifacts remain.
+   */
+  .product-image {
+    object-fit: cover;
+    object-position: center var(--product-image-focus-y, top);
+  }
+}
+
 @keyframes shimmer {
   0% {
     transform: translateX(-100%);

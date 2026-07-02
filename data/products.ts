@@ -4,6 +4,7 @@ import { generateDressProducts } from "./generate-dresses";
 /**
  * Add products by placing images in public/images/ and appending entries here.
  * Image paths must match filenames exactly (case-sensitive on Linux deploys).
+ * After replacing image files, bump IMAGE_CACHE_VERSION in lib/constants.ts.
  */
 export const products: Product[] = [
   {
